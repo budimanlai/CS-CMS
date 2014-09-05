@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<premission>
+    <title>User Management</title>
+    <description>Module untuk manage, create, update, delete dan mengatur permission user</description>
+    <section>
+        <items title="Manage Users">
+            <role route="users/default/index">View Users</role>
+            <role route="users/default/create">Create Users</role>
+            <role route="users/default/update">Update Users Profile</role>
+            <role route="users/default/delete">Delete Users</role>
+        </items>
+        <items title="Manage Permission">
+            <role route="users/permission/canManageUserGroup">Manage User Group & Permission</role>
+        </items>
+    </section>
+</permission>

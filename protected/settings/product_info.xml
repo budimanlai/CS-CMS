@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+    <name>Product Module</name>
+    <version>1.0</version>
+    <author>Budiman Lai</author>
+    <type>module</type>
+    <module_name>product</module_name>
+    <module_path>protected/modules/product</module_path>
+    <menu>
+        <item>
+            <title>Master Product</title>
+            <router>product/default/index</router>
+            <iconCls>product</iconCls>
+            <description>
+                <![CDATA
+                Manage data product seperti create, update, view dan delete.
+                ]>
+            </description>
+        </item>
+        <item>
+            <title>Master Category</title>
+            <router>product/category/index</router>
+            <iconCls>category</iconCls>
+        </item>
+        <item>
+            <title>Master Brand</title>
+            <router>product/brand/index</router>
+            <iconCls>brand</iconCls>
+        </item>
+        <item>
+            <title>Master PLU/SKU</title>
+            <children>
+                <item>
+                    <title>PLU/SKU Data</title>
+                    <router>product/plu/index</router>
+                </item>
+                <item>
+                    <title>PLU/SKU Category</title>
+                    <router>product/plu_category/index</router>
+                </item>
+            </children>
+        </item>
+    </menu>
+</information>
